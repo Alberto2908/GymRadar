@@ -104,7 +104,7 @@ public class RadarActivity extends AppCompatActivity implements OnMapReadyCallba
     }
 
     private void obtenerGimnasiosCercanos(LatLng location) {
-        String apiKey = "AIzaSyCVo72Pw67nB_m5y7BG_y8L0vnGHZX6kZk";
+        String apiKey = "Insert ur API KEY here";
         // Url con filtro
         String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?" +
                 "location=" + location.latitude + "," + location.longitude +
