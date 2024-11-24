@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondoPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#23252D"
+    app:circularflow_radiusInDP="36"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fondoColor"
+        android:layout_width="361dp"
+        android:layout_height="640dp"
+        android:background="@drawable/shape"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBotFondo"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDchaFondo"
+        app:layout_constraintStart_toStartOf="@+id/guidelineIzqFondo"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMargenTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMargenBotLogos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineMargenTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineIcIzq1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineIcIzq2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineIcCtro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineIcCtro2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.64" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineicDcha1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineIcDcha2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBotLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeftLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRightLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTopLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBotFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDchaFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineIzqFondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <ImageButton
+        android:id="@+id/radarButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="changeToRadar"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineIcIzq2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineIcIzq1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMargenBotLogos"
+        app:srcCompat="@drawable/radaroscuro" />
+
+    <ImageButton
+        android:id="@+id/mancButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="changeToMain"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineIcCtro2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineIcCtro1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMargenBotLogos"
+        app:srcCompat="@drawable/mancazul" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="changeToFavorites"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineIcDcha2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineicDcha1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineMargenBotLogos"
+        app:srcCompat="@drawable/favoriteoscuro" />
+
+    <ImageButton
+        android:id="@+id/imageLogin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:onClick="changeToLogin"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBotLogin"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRightLogin"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeftLogin"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopLogin"
+        app:srcCompat="@drawable/loginoscuro" />
+
+    <TextView
+        android:id="@+id/textoTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="GIMNASIOS"
+        android:textColor="#DCDCDC"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBotLogin"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineIcIzq2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineIcIzq1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopLogin" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/fondoUsable"
+        android:layout_width="330dp"
+        android:layout_height="570dp"
+        android:background="#3B3C40"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoColor"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineIcDcha2"
+        app:layout_constraintStart_toStartOf="@+id/guidelineIcIzq1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineBotLogin" />
+
+    <TextView
+        android:id="@+id/nombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:enabled="false"
+        android:fontFamily="@font/inter_medium"
+        android:textAlignment="textEnd"
+        android:textColor="#DCDCDC"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBotLogin"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineLeftLogin"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTopLogin" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gym_recycler_view"
+        android:layout_width="330dp"
+        android:layout_height="570dp"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/scrollbar_thumb"
+        android:scrollbarTrackVertical="@color/scrollbar_track_color"
+        android:scrollbarSize="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fondoUsable"
+        app:layout_constraintEnd_toEndOf="@+id/fondoUsable"
+        app:layout_constraintStart_toStartOf="@+id/fondoUsable"
+        app:layout_constraintTop_toTopOf="@+id/fondoUsable" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
